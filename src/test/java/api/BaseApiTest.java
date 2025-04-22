@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 import java.io.IOException;
 
-public abstract class BaseTest {
+public abstract class BaseApiTest {
     @BeforeAll
     public static void prepare() throws IOException {
         System.getProperties().load(ClassLoader.getSystemResourceAsStream("config.properties"));

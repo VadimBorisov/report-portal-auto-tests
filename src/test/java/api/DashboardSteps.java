@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DashboardSteps extends BaseTest {
+public class DashboardSteps extends BaseApiTest {
     @Step("Генерируем данные для запроса")
     DashboardRequest generateDashboardRequest() {
         DashboardRequest request = new DashboardRequest();

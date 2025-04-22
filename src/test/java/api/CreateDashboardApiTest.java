@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import ru.home.vadim.models.Dashboard;
 import ru.home.vadim.models.DashboardRequest;
 
-public class CreateDashboardTest extends BaseTest {
+public class CreateDashboardApiTest extends BaseApiTest {
     @Epic("Работа с Dashboards")
     @Feature("Создание Dashboards")
     @Story("Проверка успешного создания нового Dashboard")
