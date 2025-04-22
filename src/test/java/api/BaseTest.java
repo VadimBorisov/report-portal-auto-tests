@@ -4,12 +4,12 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
-import org.testng.annotations.BeforeClass;
+import org.junit.jupiter.api.BeforeAll;
 
 import java.io.IOException;
 
 public abstract class BaseTest {
-    @BeforeClass
+    @BeforeAll
     public static void prepare() throws IOException {
         System.getProperties().load(ClassLoader.getSystemResourceAsStream("config.properties"));
 
@@ -22,6 +22,7 @@ public abstract class BaseTest {
                 .setBaseUri(baseUri)
                 .setAccept(ContentType.JSON)
                 .setContentType(ContentType.JSON)
+                .addHeader("Authorization", "Bearer " + System.getProperty("api.key"))
                 .log(LogDetail.ALL)
                 .build();
     }
