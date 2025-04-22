@@ -4,8 +4,8 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
-import ru.home.vadim.model.Dashboard;
-import ru.home.vadim.model.DashboardRequest;
+import ru.home.vadim.models.Dashboard;
+import ru.home.vadim.models.DashboardRequest;
 
 public class CreateDashboardTest extends BaseTest {
     @Epic("Работа с Dashboards")

@@ -1,4 +1,4 @@
-package ru.home.vadim.model;
+package ru.home.vadim.models;
 
 public class DashboardRequest {
     private String description;

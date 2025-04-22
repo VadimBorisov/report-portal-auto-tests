@@ -1,4 +1,4 @@
-package ru.home.vadim.model;
+package ru.home.vadim.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

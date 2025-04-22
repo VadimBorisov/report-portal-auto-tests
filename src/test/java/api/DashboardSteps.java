@@ -1,8 +1,8 @@
 package api;
 
 import io.qameta.allure.Step;
-import ru.home.vadim.model.Dashboard;
-import ru.home.vadim.model.DashboardRequest;
+import ru.home.vadim.models.Dashboard;
+import ru.home.vadim.models.DashboardRequest;
 
 import java.util.Random;
 import java.util.stream.IntStream;
