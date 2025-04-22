@@ -9,7 +9,7 @@ import ru.home.vadim.models.DashboardRequest;
 
 public class CreateDashboardApiTest extends BaseApiTest {
     @Epic("Работа с Dashboards")
-    @Feature("Создание Dashboards")
+    @Feature("Создание Dashboards через API")
     @Story("Проверка успешного создания нового Dashboard")
     @Test
     void successfullyCreateDashboard() {
