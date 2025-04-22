@@ -3,7 +3,7 @@ package ru.home.vadim.webdriver;
 import org.openqa.selenium.WebDriver;
 
 public class WebDriverSingleton {
-    private static ThreadLocal<WebDriverSingleton> instance = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriverSingleton> instance = new ThreadLocal<>();
     private WebDriver driver;
 
     private WebDriverSingleton() {
